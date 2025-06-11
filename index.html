@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Luna y Pepo</title>
+  </head>
+  <body>
+    <div class="petalas-bg"></div>
+
+    <div class="container">
+      <div class="musica-container player-right">
+        <div class="custom-player">
+          <button id="prevTrackBtn" class="icon-btn">
+            <img
+              src="src/images/next-icon.svg"
+              alt="Anterior"
+              style="transform: rotate(180deg)"
+            />
+          </button>
+          <button id="muteBtn" class="icon-btn">
+            <img
+              id="muteIcon"
+              src="src/images/on-audio.png"
+              alt="Áudio ligado"
+            />
+          </button>
+          <button id="nextTrackBtn" class="icon-btn">
+            <img src="src/images/next-icon.svg" alt="Próxima" />
+          </button>
+          <audio id="audio" style="display: none"></audio>
+        </div>
+      </div>
+
+      <h1 class="title">Com Você, Tudo é Melhor</h1>
+
+      <div class="card-container">
+        <button class="carousel-btn prev">
+          <img src="src/images/next-icon.svg" alt="Anterior" />
+        </button>
+        <div class="card">
+          <img class="card-img" src="src/images/foto-1.jpg" alt="Luna" />
+          <img class="card-img" src="src/images/foto-2.jpg" alt="Luna" />
+          <img
+            class="card-img"
+            src="src/images/foto-3.jpg"
+            alt="Luna e Pepo na praia"
+          />
+          <img class="card-img" src="src/images/foto-4.jpg" alt="Pepo" />
+          <img
+            class="card-img"
+            src="src/images/foto-5.jpg"
+            alt="Luna e Pepo na escola"
+          />
+          <img
+            class="card-img"
+            src="src/images/foto-6.jpg"
+            alt="Luna e Pepo no shopping"
+          />
+          <img
+            class="card-img"
+            src="src/images/foto-7.jpg"
+            alt="Pepo e Luna na escola"
+          />
+          <img class="card-img" src="src/images/foto-8.jpg" alt="Luna" />
+          <img class="card-img" src="src/images/foto-9.jpg" alt="Luna" />
+          <img class="card-img" src="src/images/foto-10.jpg" alt="Luna" />
+          <img class="card-img" src="src/images/foto-11.jpg" alt="Luna" />
+          <img class="card-img" src="src/images/foto-12.jpg" alt="Luna" />
+        </div>
+        <button class="carousel-btn next">
+          <img src="src/images/next-icon.svg" alt="Próximo" />
+        </button>
+      </div>
+
+      <div class="divider-line"></div>
+
+      <p class="message">
+        Estamos a 2 anos e 3 meses juntos, e eu não poderia estar mais feliz.
+        Desde que eu te conheci, sempre soube que você era a pessoa certa para
+        mim. Você é a minha melhor amiga, minha parceira e meu amor. Eu amo cada
+        momento que passamos juntos, e mal posso esperar para ver o que o futuro
+        nos reserva. Obrigado por ser você, por me fazer rir e por estar sempre
+        ao meu lado. Você é o meu sofá que nunca irei trocar, eu te amo amor.
+      </p>
+      <div class="divider-heart">🐥💜</div>
+    </div>
+
+    <!-- Shapes decorativos -->
+    <div class="bg-shape1"></div>
+    <div class="bg-shape2"></div>
+    <div class="emojis-bg"></div>
+
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="#a259e6"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <polyline points="9 18 15 12 9 6" />
+    </svg>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
