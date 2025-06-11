@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Inicializa o player com a primeira música e tenta tocar automaticamente
   loadTrack(currentTrack);
   audio.play();
-  audio.volume = 1;
+  audio.volume = 0.5;
   document.body.addEventListener("click", () => {
     if (audio.paused) audio.play();
   }, { once: true });
