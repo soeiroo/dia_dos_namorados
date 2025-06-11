@@ -89,12 +89,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextTrackBtn = document.getElementById("nextTrackBtn");
   const muteBtn = document.getElementById("muteBtn");
   const muteIcon = document.getElementById("muteIcon");
-  const musicTitle = document.getElementById("musicTitle");
 
   function loadTrack(index) {
     const track = playlist[index];
     audio.src = track.src;
-    musicTitle.textContent = "🎵 " + track.title;
     audio.load();
     audio.muted = false;
     muteIcon.src = "src/images/on-audio.png";
@@ -131,6 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Inicializa o player com a primeira música e tenta tocar automaticamente
   loadTrack(currentTrack);
   audio.play();
+  audio.volume = 1;
   document.body.addEventListener("click", () => {
     if (audio.paused) audio.play();
   }, { once: true });
