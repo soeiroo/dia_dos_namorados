@@ -1,4 +1,74 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Hello Kitty SVGs
+  const addHelloKittySVGs = () => {
+    const svgPaths = [
+      "src/images/hello-kitty-1.svg",
+      "src/images/hello-kitty-2.svg",
+      "src/images/hello-kitty-3.svg",
+      "src/images/hello-kitty-4.svg",
+      "src/images/hello-kitty-5.svg"
+    ];
+
+    // Adicionar SVGs nos quatro cantos
+    const corners = [
+      { left: '5vw', top: '5vh' },
+      { left: '5vw', top: '90vh' },
+      { left: '90vw', top: '5vh' },
+      { left: '90vw', top: '90vh' }
+    ];
+
+    corners.forEach((position, index) => {
+      const svg = document.createElement("img");
+      svg.classList.add("hello-kitty-svg");
+      svg.classList.add("corner-kitty");
+      svg.src = svgPaths[index % svgPaths.length];
+      svg.style.left = position.left;
+      svg.style.top = position.top;
+      svg.style.transform = `rotate(${Math.random() * 30 - 15}deg) scale(${0.8 + Math.random() * 0.4})`;
+      svg.style.opacity = 0.5 + Math.random() * 0.3;
+      svg.style.zIndex = "1";
+      document.body.appendChild(svg);
+    });
+
+    // Adicionar SVGs nas bordas laterais
+    for (let i = 0; i < 6; i++) {
+      const svg = document.createElement("img");
+      svg.classList.add("hello-kitty-svg");
+      svg.src = svgPaths[Math.floor(Math.random() * svgPaths.length)];
+
+      // Determinar se fica na esquerda ou direita
+      const isLeft = i % 2 === 0;
+
+      // Posicionar nas laterais com pequena variação
+      svg.style.left = isLeft ? `${Math.random() * 10}vw` : `${90 + Math.random() * 10}vw`;
+      svg.style.top = `${10 + Math.random() * 80}vh`; // Distribuir verticalmente
+
+      svg.style.transform = `rotate(${Math.random() * 360}deg) scale(${0.6 + Math.random() * 0.8})`;
+      svg.style.opacity = 0.5 + Math.random() * 0.3;
+      document.body.appendChild(svg);
+    }
+
+    // Adicionar alguns SVGs nas bordas superior e inferior
+    for (let i = 0; i < 8; i++) {
+      const svg = document.createElement("img");
+      svg.classList.add("hello-kitty-svg");
+      svg.src = svgPaths[Math.floor(Math.random() * svgPaths.length)];
+
+      // Determinar se fica em cima ou embaixo
+      const isTop = i % 2 === 0;
+
+      // Posicionar nas bordas superior e inferior
+      svg.style.top = isTop ? `${Math.random() * 15}vh` : `${85 + Math.random() * 15}vh`;
+      svg.style.left = `${10 + Math.random() * 80}vw`; // Distribuir horizontalmente
+
+      svg.style.transform = `rotate(${Math.random() * 360}deg) scale(${0.6 + Math.random() * 0.8})`;
+      svg.style.opacity = 0.5 + Math.random() * 0.3;
+      document.body.appendChild(svg);
+    }
+  };
+
+  addHelloKittySVGs();
+
   // Pétalas
   const petalasBg = document.querySelector(".petalas-bg");
   const numPetalas = 12;

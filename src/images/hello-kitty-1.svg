@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="50" height="50">
+  <g opacity="0.6">
+    <!-- Cabeça/Face da Hello Kitty -->
+    <circle cx="50" cy="50" r="30" fill="#ffffff" stroke="#ffb6c1" stroke-width="2"/>
+
+    <!-- Olhos mais adoráveis -->
+    <circle cx="42" cy="42" r="4" fill="#000"/>
+    <circle cx="58" cy="42" r="4" fill="#000"/>
+
+    <!-- Brilho nos olhos -->
+    <circle cx="44" cy="40" r="1.5" fill="#ffffff"/>
+    <circle cx="60" cy="40" r="1.5" fill="#ffffff"/>
+
+    <!-- Nariz pequeno e fofo -->
+    <circle cx="50" cy="48" r="2.5" fill="#ffb6c1"/>
+
+    <!-- Bigodes mais delicados -->
+    <path d="M40 50 L 30 48 M 40 52 L 30 54 M 60 50 L 70 48 M 60 52 L 70 54" stroke="#ffb6c1" stroke-width="1"/>
+
+    <!-- Laço rosa claro -->
+    <circle cx="70" cy="35" r="7" fill="#ffb6c1" opacity="0.8"/>
+    <circle cx="77" cy="35" r="7" fill="#ffb6c1" opacity="0.8"/>
+    <ellipse cx="73.5" cy="35" rx="3" ry="2" fill="#ffffff" opacity="0.8"/>
+  </g>
+</svg>

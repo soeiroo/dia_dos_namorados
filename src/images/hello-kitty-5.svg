@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="65" height="65">
+  <g opacity="0.6">
+    <!-- Cabeça da Hello Kitty -->
+    <circle cx="50" cy="50" r="30" fill="#ffffff" stroke="#ffb6c1" stroke-width="2"/>
+
+    <!-- Olhos grandes e brilhantes -->
+    <ellipse cx="42" cy="43" rx="5" ry="6" fill="#000"/>
+    <ellipse cx="58" cy="43" rx="5" ry="6" fill="#000"/>
+
+    <!-- Brilhos fofos nos olhos -->
+    <circle cx="44" cy="41" r="2" fill="#ffffff"/>
+    <circle cx="60" cy="41" r="2" fill="#ffffff"/>
+
+    <!-- Nariz fofinho -->
+    <circle cx="50" cy="50" r="2.5" fill="#ffb6c1"/>
+
+    <!-- Bochechas bem coradinhas -->
+    <circle cx="36" cy="50" r="6" fill="#ffb6c1" opacity="0.3"/>
+    <circle cx="64" cy="50" r="6" fill="#ffb6c1" opacity="0.3"/>
+
+    <!-- Boquinha com sorriso -->
+    <path d="M46 56 Q 50 60 54 56" stroke="#ffb6c1" stroke-width="1.5" fill="none"/>
+
+    <!-- Orelhas arredondadas -->
+    <circle cx="30" cy="28" r="10" fill="#ffffff" stroke="#ffb6c1" stroke-width="1.5"/>
+    <circle cx="70" cy="28" r="10" fill="#ffffff" stroke="#ffb6c1" stroke-width="1.5"/>
+
+    <!-- Laço grande e fofo -->
+    <circle cx="73" cy="50" r="8" fill="#ffb6c1" opacity="0.7"/>
+    <circle cx="82" cy="50" r="8" fill="#ffb6c1" opacity="0.7"/>
+    <circle cx="77.5" cy="50" r="3" fill="#ffffff" opacity="0.8"/>
+  </g>
+</svg>

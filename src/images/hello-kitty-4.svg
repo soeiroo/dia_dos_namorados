@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="70" height="70">
+  <g opacity="0.6">
+    <!-- Cabeça da Hello Kitty -->
+    <circle cx="50" cy="50" r="30" fill="#ffffff" stroke="#d5bfff" stroke-width="2"/>
+
+    <!-- Olhos super fofos -->
+    <ellipse cx="42" cy="42" rx="4" ry="5" fill="#000"/>
+    <ellipse cx="58" cy="42" rx="4" ry="5" fill="#000"/>
+
+    <!-- Brilhos nos olhos em formato de estrela -->
+    <path d="M40 38 L 42 40 L 40 42 L 38 40 Z" fill="#ffffff"/>
+    <path d="M56 38 L 58 40 L 56 42 L 54 40 Z" fill="#ffffff"/>
+
+    <!-- Nariz em formato de coração -->
+    <path d="M48 48 Q 50 46 52 48 Q 54 50 50 52 Q 46 50 48 48 Z" fill="#ffb6c1"/>
+
+    <!-- Bochechas bem coradinhas -->
+    <circle cx="37" cy="48" r="5" fill="#ffb6c1" opacity="0.4"/>
+    <circle cx="63" cy="48" r="5" fill="#ffb6c1" opacity="0.4"/>
+
+    <!-- Boca sorridente e fofa -->
+    <path d="M45 54 Q 50 58 55 54" stroke="#d5bfff" stroke-width="1.5" fill="none"/>
+
+    <!-- Laço super fofo -->
+    <circle cx="30" cy="28" r="7" fill="#ffb6c1" opacity="0.8"/>
+    <circle cx="39" cy="28" r="7" fill="#ffb6c1" opacity="0.8"/>
+    <ellipse cx="34.5" cy="28" rx="3" ry="2" fill="#ffffff" opacity="0.8"/>
+    <rect x="32" y="29" width="5" height="4" fill="#ffb6c1" opacity="0.8"/>
+
+    <!-- Pequenas flores decorativas -->
+    <circle cx="70" cy="30" r="6" fill="#d5bfff" opacity="0.5"/>
+    <circle cx="70" cy="30" r="3" fill="#ffffff" opacity="0.7"/>
+    <circle cx="70" cy="30" r="1" fill="#ffb6c1" opacity="0.9"/>
+  </g>
+</svg>

@@ -17,6 +17,28 @@ body {
   font-weight: 400;
 }
 
+/* Hello Kitty SVGs */
+.hello-kitty-svg {
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.6;
+  animation: float 8s ease-in-out infinite alternate;
+  transform-origin: center center;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(10px) rotate(-5deg);
+  }
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -104,6 +126,45 @@ body {
   color: white;
   cursor: pointer;
   transition: background 0.3s ease;
+}
+
+/* Animações específicas para SVGs nas laterais */
+.hello-kitty-svg:nth-child(5n) {
+  animation-name: float-side;
+  animation-duration: 9s;
+}
+
+@keyframes float-side {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(10px) rotate(5deg);
+  }
+  100% {
+    transform: translateX(-10px) rotate(-5deg);
+  }
+}
+
+.corner-kitty {
+  width: 80px;
+  height: 80px;
+  animation: pulse-corner 5s ease-in-out infinite alternate;
+}
+
+@keyframes pulse-corner {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1) rotate(-5deg);
+    opacity: 0.4;
+  }
 }
 
 #playPauseBtn:hover {
@@ -393,6 +454,10 @@ body {
 @media (max-width: 480px) {
   .message {
     font-size: 0.9rem;
+    width: 80%;
+  }
+
+  .divider-line {
     width: 80%;
   }
 
